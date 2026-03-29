@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Terms of Service — FPL Pro</title>
+  <meta name="description" content="FPL Pro Terms of Service. Not affiliated with the Premier League. Free during beta, paid subscription from August 2026." />
+  <style>
+    :root {
+      --bg: #f5f5f7;
+      --bg2: #ebebef;
+      --card: #ffffff;
+      --card2: #f9f9fb;
+      --line: #e4e4ea;
+      --text: #111111;
+      --muted: #6f6f76;
+      --muted2: #9a9aa3;
+      --gold: #d4af37;
+      --blue: #0a84ff;
+      --shadow-xs: 0 2px 8px rgba(17,17,17,.04);
+      --shadow-sm: 0 4px 16px rgba(17,17,17,.06);
+      --radius-lg: 24px;
+      --max: 760px;
+      color-scheme: light;
+    }
+    html.dark {
+      --bg: #111113;
+      --bg2: #1a1a1c;
+      --card: #1c1c1e;
+      --card2: #242426;
+      --line: #2c2c2e;
+      --text: #f5f5f7;
+      --muted: #8e8e93;
+      --muted2: #636366;
+      --shadow-xs: 0 2px 8px rgba(0,0,0,.18);
+      --shadow-sm: 0 4px 16px rgba(0,0,0,.22);
+      color-scheme: dark;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      -webkit-font-smoothing: antialiased;
+      transition: background .25s ease, color .25s ease;
+    }
+    a { color: var(--blue); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .wrap { width: min(calc(100% - 32px), var(--max)); margin: 0 auto; }
+
+    .nav {
+      position: sticky; top: 0; z-index: 20;
+      background: rgba(245,245,247,.88);
+      backdrop-filter: blur(24px);
+      -webkit-backdrop-filter: blur(24px);
+      border-bottom: 1px solid var(--line);
+      transition: background .25s ease, border-color .25s ease;
+    }
+    html.dark .nav { background: rgba(17,17,19,.88); }
+    .nav-inner {
+      display: flex; align-items: center; justify-content: space-between;
+      gap: 12px; padding: 13px 0;
+    }
+    .brand {
+      display: flex; align-items: center; gap: 10px;
+      font-size: 1.06rem; font-weight: 800; letter-spacing: -.04em;
+      color: var(--text);
+    }
+    .brand-icon {
+      width: 36px; height: 36px; border-radius: 10px;
+      background: #111; display: grid; place-items: center;
+      color: #fff; font-size: 15px; font-weight: 900;
+      box-shadow: var(--shadow-sm); flex-shrink: 0;
+    }
+    html.dark .brand-icon { background: #fff; color: #111; }
+    .theme-btn {
+      width: 38px; height: 38px; border-radius: 999px;
+      background: var(--card); border: 1.5px solid var(--line);
+      display: grid; place-items: center; cursor: pointer;
+      font-size: 16px; box-shadow: var(--shadow-xs);
+      transition: background .2s, border-color .2s, transform .15s;
+    }
+    .theme-btn:hover { transform: scale(1.08); }
+
+    .legal-header { padding: 64px 0 40px; }
+    .legal-header .eyebrow {
+      font-size: .78rem; font-weight: 700; letter-spacing: .1em;
+      text-transform: uppercase; color: var(--muted); margin-bottom: 12px;
+    }
+    .legal-header h1 {
+      font-size: clamp(2rem, 5vw, 3rem);
+      font-weight: 900; letter-spacing: -.04em; line-height: 1.1;
+      margin-bottom: 16px;
+    }
+    .legal-header .updated { font-size: .85rem; color: var(--muted); }
+
+    .legal-body { padding-bottom: 80px; }
+    .legal-body section { margin-bottom: 40px; }
+    .legal-body h2 {
+      font-size: 1.15rem; font-weight: 800; letter-spacing: -.02em;
+      margin-bottom: 12px; color: var(--text);
+    }
+    .legal-body p {
+      font-size: .97rem; line-height: 1.75; color: var(--muted);
+      margin-bottom: 10px;
+    }
+    .legal-body p:last-child { margin-bottom: 0; }
+    .legal-body ul {
+      list-style: none; padding: 0;
+      display: flex; flex-direction: column; gap: 8px;
+      margin-bottom: 10px;
+    }
+    .legal-body ul li {
+      font-size: .97rem; line-height: 1.7; color: var(--muted);
+      padding-left: 18px; position: relative;
+    }
+    .legal-body ul li::before {
+      content: "·"; position: absolute; left: 0;
+      color: var(--muted2); font-size: 1.2em; line-height: 1.5;
+    }
+    .card-section {
+      background: var(--card); border: 1px solid var(--line);
+      border-radius: var(--radius-lg); padding: 24px 28px; margin-bottom: 40px;
+    }
+    .card-section h2 { margin-bottom: 14px; }
+    .disclaimer-card {
+      background: rgba(212,175,55,.08); border: 1px solid rgba(212,175,55,.25);
+      border-radius: var(--radius-lg); padding: 20px 24px; margin-bottom: 40px;
+    }
+    .disclaimer-card p { font-size: .94rem; color: var(--muted); }
+
+    .legal-footer {
+      border-top: 1px solid var(--line); padding: 32px 0;
+      display: flex; align-items: center; justify-content: space-between;
+      gap: 12px; flex-wrap: wrap;
+    }
+    .legal-footer .foot-links { display: flex; gap: 20px; flex-wrap: wrap; }
+    .legal-footer a { font-size: .85rem; color: var(--muted); }
+    .legal-footer a:hover { color: var(--text); }
+    .legal-footer .foot-copy { font-size: .82rem; color: var(--muted2); }
+  </style>
+</head>
+<body>
+
+  <nav class="nav">
+    <div class="wrap">
+      <div class="nav-inner">
+        <a href="https://fplpro.app" class="brand">
+          <div class="brand-icon">F</div>
+          FPL Pro
+        </a>
+        <button class="theme-btn" id="themeBtn" aria-label="Toggle theme">🌙</button>
+      </div>
+    </div>
+  </nav>
+
+  <div class="wrap">
+    <header class="legal-header">
+      <div class="eyebrow">Legal</div>
+      <h1>Terms of Service</h1>
+      <p class="updated">Last updated: March 2026</p>
+    </header>
+
+    <div class="legal-body">
+
+      <section>
+        <p>These terms govern your use of FPL Pro (the "App"), an iOS application developed by Keanu Pense ("we", "us"). By downloading or using the App, you agree to these terms.</p>
+      </section>
+
+      <div class="disclaimer-card">
+        <p><strong>Not affiliated with the Premier League.</strong> FPL Pro is an independent third-party app. It is not affiliated with, endorsed by, or sponsored by the Premier League, Fantasy Premier League, or any football club. All FPL data is sourced from the public FPL API.</p>
+      </div>
+
+      <section>
+        <h2>What FPL Pro does</h2>
+        <p>FPL Pro is a tool for Fantasy Premier League managers. It reads your FPL team data and provides transfer recommendations, selection advice, fixture analysis, and expected-points calculations. All suggestions are algorithmic — they are not guarantees of performance.</p>
+      </section>
+
+      <section>
+        <h2>No guarantee of FPL points</h2>
+        <p>FPL Pro's advice is based on statistical models and publicly available data. We make no guarantee, warranty, or representation that following the app's suggestions will result in any particular FPL score, rank improvement, or gameweek outcome. You use the advice at your own discretion.</p>
+      </section>
+
+      <div class="card-section">
+        <h2>Pricing and subscriptions</h2>
+        <ul>
+          <li><strong>Beta period (now — end of 2024/25 season):</strong> FPL Pro is completely free. No payment required.</li>
+          <li><strong>From August 2026 (2025/26 season):</strong> A paid subscription will be introduced. Pricing will be announced before the season starts. Existing users will be given advance notice.</li>
+          <li><strong>Free tier:</strong> A free tier with limited features will remain available after monetisation begins.</li>
+          <li><strong>Billing:</strong> Subscriptions are processed through Apple's in-app purchase system (StoreKit). Apple's payment terms apply.</li>
+          <li><strong>Refunds:</strong> Subscription refunds are handled by Apple. Contact Apple Support to request a refund.</li>
+        </ul>
+      </div>
+
+      <section>
+        <h2>Eligibility</h2>
+        <ul>
+          <li>You must be at least 13 years old to use FPL Pro.</li>
+          <li>You must have an active Fantasy Premier League account to use core features.</li>
+          <li>FPL Pro is currently available on iOS only.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Your account</h2>
+        <p>You are responsible for maintaining the security of your account credentials. We are not liable for any loss resulting from unauthorised access to your account. You can delete your account at any time by emailing <a href="mailto:keanudevlabs@gmail.com">keanudevlabs@gmail.com</a>.</p>
+      </section>
+
+      <section>
+        <h2>Acceptable use</h2>
+        <p>You agree not to:</p>
+        <ul>
+          <li>Reverse engineer, decompile, or disassemble the App</li>
+          <li>Use the App to scrape or systematically access FPL data at scale</li>
+          <li>Attempt to circumvent any subscription or access controls</li>
+          <li>Use the App for any unlawful purpose</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Intellectual property</h2>
+        <p>FPL Pro, its design, algorithms, and content are the property of Keanu Pense. Premier League, Fantasy Premier League, and related marks are the property of their respective owners. FPL Pro makes no claim to these marks.</p>
+      </section>
+
+      <section>
+        <h2>Limitation of liability</h2>
+        <p>To the maximum extent permitted by law, FPL Pro is provided "as is" without warranty of any kind. We are not liable for any indirect, incidental, or consequential damages arising from your use of the App, including but not limited to losses in FPL mini-leagues or season rankings.</p>
+      </section>
+
+      <section>
+        <h2>Service availability</h2>
+        <p>We aim for high availability but do not guarantee uninterrupted service. We may update, modify, or discontinue features at any time. We will provide reasonable notice for significant changes.</p>
+      </section>
+
+      <section>
+        <h2>Governing law</h2>
+        <p>These terms are governed by the laws of Germany. Any disputes shall be subject to the exclusive jurisdiction of the courts of Berlin, Germany, unless mandatory consumer protection laws in your country require otherwise.</p>
+      </section>
+
+      <section>
+        <h2>Changes to these terms</h2>
+        <p>We may update these terms from time to time. Continued use of the App after changes constitutes acceptance. We will notify you of material changes via the App or email.</p>
+      </section>
+
+      <section>
+        <h2>Contact</h2>
+        <p>Questions about these terms? Email <a href="mailto:keanudevlabs@gmail.com">keanudevlabs@gmail.com</a></p>
+        <p>Keanu Pense, Berlin, Germany.</p>
+      </section>
+
+    </div>
+
+    <footer class="legal-footer">
+      <div class="foot-links">
+        <a href="https://fplpro.app">← Back to FPL Pro</a>
+        <a href="https://fplpro.app/privacy">Privacy Policy</a>
+      </div>
+      <span class="foot-copy">© 2026 FPL Pro</span>
+    </footer>
+  </div>
+
+  <script>
+    const btn = document.getElementById('themeBtn');
+    const key = 'fplpro-theme';
+    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+    let dark = localStorage.getItem(key) ? localStorage.getItem(key) === 'dark' : prefersDark;
+    function apply() {
+      document.documentElement.classList.toggle('dark', dark);
+      btn.textContent = dark ? '☀️' : '🌙';
+    }
+    apply();
+    btn.addEventListener('click', () => { dark = !dark; localStorage.setItem(key, dark ? 'dark' : 'light'); apply(); });
+  </script>
+</body>
+</html>

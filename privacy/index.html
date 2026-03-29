@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy — FPL Pro</title>
+  <meta name="description" content="FPL Pro Privacy Policy. We collect only what's necessary to run the app. No selling your data." />
+  <style>
+    :root {
+      --bg: #f5f5f7;
+      --bg2: #ebebef;
+      --card: #ffffff;
+      --card2: #f9f9fb;
+      --line: #e4e4ea;
+      --text: #111111;
+      --muted: #6f6f76;
+      --muted2: #9a9aa3;
+      --gold: #d4af37;
+      --blue: #0a84ff;
+      --shadow-xs: 0 2px 8px rgba(17,17,17,.04);
+      --shadow-sm: 0 4px 16px rgba(17,17,17,.06);
+      --radius-lg: 24px;
+      --max: 760px;
+      color-scheme: light;
+    }
+    html.dark {
+      --bg: #111113;
+      --bg2: #1a1a1c;
+      --card: #1c1c1e;
+      --card2: #242426;
+      --line: #2c2c2e;
+      --text: #f5f5f7;
+      --muted: #8e8e93;
+      --muted2: #636366;
+      --shadow-xs: 0 2px 8px rgba(0,0,0,.18);
+      --shadow-sm: 0 4px 16px rgba(0,0,0,.22);
+      color-scheme: dark;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      -webkit-font-smoothing: antialiased;
+      transition: background .25s ease, color .25s ease;
+    }
+    a { color: var(--blue); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .wrap { width: min(calc(100% - 32px), var(--max)); margin: 0 auto; }
+
+    .nav {
+      position: sticky; top: 0; z-index: 20;
+      background: rgba(245,245,247,.88);
+      backdrop-filter: blur(24px);
+      -webkit-backdrop-filter: blur(24px);
+      border-bottom: 1px solid var(--line);
+      transition: background .25s ease, border-color .25s ease;
+    }
+    html.dark .nav { background: rgba(17,17,19,.88); }
+    .nav-inner {
+      display: flex; align-items: center; justify-content: space-between;
+      gap: 12px; padding: 13px 0;
+    }
+    .brand {
+      display: flex; align-items: center; gap: 10px;
+      font-size: 1.06rem; font-weight: 800; letter-spacing: -.04em;
+      color: var(--text);
+    }
+    .brand-icon {
+      width: 36px; height: 36px; border-radius: 10px;
+      background: #111; display: grid; place-items: center;
+      color: #fff; font-size: 15px; font-weight: 900;
+      box-shadow: var(--shadow-sm); flex-shrink: 0;
+    }
+    html.dark .brand-icon { background: #fff; color: #111; }
+    .theme-btn {
+      width: 38px; height: 38px; border-radius: 999px;
+      background: var(--card); border: 1.5px solid var(--line);
+      display: grid; place-items: center; cursor: pointer;
+      font-size: 16px; box-shadow: var(--shadow-xs);
+      transition: background .2s, border-color .2s, transform .15s;
+    }
+    .theme-btn:hover { transform: scale(1.08); }
+
+    .legal-header { padding: 64px 0 40px; }
+    .legal-header .eyebrow {
+      font-size: .78rem; font-weight: 700; letter-spacing: .1em;
+      text-transform: uppercase; color: var(--muted); margin-bottom: 12px;
+    }
+    .legal-header h1 {
+      font-size: clamp(2rem, 5vw, 3rem);
+      font-weight: 900; letter-spacing: -.04em; line-height: 1.1;
+      margin-bottom: 16px;
+    }
+    .legal-header .updated { font-size: .85rem; color: var(--muted); }
+
+    .legal-body { padding-bottom: 80px; }
+    .legal-body section { margin-bottom: 40px; }
+    .legal-body h2 {
+      font-size: 1.15rem; font-weight: 800; letter-spacing: -.02em;
+      margin-bottom: 12px; color: var(--text);
+    }
+    .legal-body p {
+      font-size: .97rem; line-height: 1.75; color: var(--muted);
+      margin-bottom: 10px;
+    }
+    .legal-body p:last-child { margin-bottom: 0; }
+    .legal-body ul {
+      list-style: none; padding: 0;
+      display: flex; flex-direction: column; gap: 8px;
+      margin-bottom: 10px;
+    }
+    .legal-body ul li {
+      font-size: .97rem; line-height: 1.7; color: var(--muted);
+      padding-left: 18px; position: relative;
+    }
+    .legal-body ul li::before {
+      content: "·"; position: absolute; left: 0;
+      color: var(--muted2); font-size: 1.2em; line-height: 1.5;
+    }
+    .card-section {
+      background: var(--card); border: 1px solid var(--line);
+      border-radius: var(--radius-lg); padding: 24px 28px; margin-bottom: 40px;
+    }
+    .card-section h2 { margin-bottom: 14px; }
+
+    .legal-footer {
+      border-top: 1px solid var(--line); padding: 32px 0;
+      display: flex; align-items: center; justify-content: space-between;
+      gap: 12px; flex-wrap: wrap;
+    }
+    .legal-footer .foot-links { display: flex; gap: 20px; flex-wrap: wrap; }
+    .legal-footer a { font-size: .85rem; color: var(--muted); }
+    .legal-footer a:hover { color: var(--text); }
+    .legal-footer .foot-copy { font-size: .82rem; color: var(--muted2); }
+  </style>
+</head>
+<body>
+
+  <nav class="nav">
+    <div class="wrap">
+      <div class="nav-inner">
+        <a href="https://fplpro.app" class="brand">
+          <div class="brand-icon">F</div>
+          FPL Pro
+        </a>
+        <button class="theme-btn" id="themeBtn" aria-label="Toggle theme">🌙</button>
+      </div>
+    </div>
+  </nav>
+
+  <div class="wrap">
+    <header class="legal-header">
+      <div class="eyebrow">Legal</div>
+      <h1>Privacy Policy</h1>
+      <p class="updated">Last updated: March 2026</p>
+    </header>
+
+    <div class="legal-body">
+
+      <section>
+        <p>FPL Pro is built by a solo developer. This policy explains what data is collected, why, and how it is handled. Short version: we collect only what's needed to run the app, we don't sell your data, and you can delete everything by emailing us.</p>
+      </section>
+
+      <div class="card-section">
+        <h2>What we collect</h2>
+        <ul>
+          <li><strong>FPL Team ID</strong> — entered by you to load your squad and transfer history from the official FPL API. Stored locally on your device.</li>
+          <li><strong>FPL session credentials</strong> — used transiently to authenticate your team. Passed through a secure proxy server and never logged or stored on our end.</li>
+          <li><strong>Apple ID / email address</strong> — collected at sign-in via Apple Sign In or email auth. Used only for account management.</li>
+          <li><strong>In-app events</strong> — anonymised analytics (screen views, feature usage, errors) via PostHog. No personal identifiers are attached.</li>
+          <li><strong>Device info</strong> — iOS version, device model — used only for crash diagnostics.</li>
+        </ul>
+      </div>
+
+      <section>
+        <h2>How we use your data</h2>
+        <ul>
+          <li>To load your FPL team and generate transfer &amp; selection advice</li>
+          <li>To manage your account and subscription status</li>
+          <li>To understand how the app is used and fix bugs</li>
+          <li>To send important app updates (not marketing emails)</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Third-party services</h2>
+        <p>FPL Pro uses the following third parties, each with their own privacy policies:</p>
+        <ul>
+          <li><strong>Supabase</strong> — authentication and account data. Data hosted in the EU.</li>
+          <li><strong>PostHog</strong> — anonymised product analytics. Data hosted in the EU.</li>
+          <li><strong>Apple</strong> — Sign In with Apple, App Store payments, StoreKit subscriptions.</li>
+          <li><strong>Fantasy Premier League API</strong> — public FPL data (players, fixtures, scores). We do not control this data.</li>
+        </ul>
+        <p>We do not sell, rent, or share your personal data with any other third parties.</p>
+      </section>
+
+      <section>
+        <h2>Analytics (PostHog)</h2>
+        <p>We use PostHog to understand which features are used and where errors occur. Events are anonymised — we cannot identify you from analytics data. No advertising IDs or cross-site tracking are used. You can opt out of analytics in the app's Settings screen.</p>
+      </section>
+
+      <section>
+        <h2>Data storage and security</h2>
+        <p>Your account data is stored on Supabase servers located in the EU. Your FPL Team ID and preferences are stored locally on your device using Apple's secure storage APIs. We use HTTPS for all network communication.</p>
+      </section>
+
+      <section>
+        <h2>Your rights (GDPR)</h2>
+        <p>If you are in the EU or EEA, you have the right to:</p>
+        <ul>
+          <li>Access the personal data we hold about you</li>
+          <li>Correct inaccurate data</li>
+          <li>Request deletion of your account and data</li>
+          <li>Object to or restrict processing</li>
+          <li>Data portability</li>
+        </ul>
+        <p>To exercise any of these rights, email us at <a href="mailto:keanudevlabs@gmail.com">keanudevlabs@gmail.com</a>. We will respond within 30 days.</p>
+      </section>
+
+      <section>
+        <h2>Data deletion</h2>
+        <p>You can delete your FPL Pro account and all associated data by emailing <a href="mailto:keanudevlabs@gmail.com">keanudevlabs@gmail.com</a> with the subject line "Delete my account". We will process this within 30 days.</p>
+      </section>
+
+      <section>
+        <h2>Children</h2>
+        <p>FPL Pro is not directed at children under 13. We do not knowingly collect data from children. If you believe we have inadvertently collected data from a child, please contact us to have it removed.</p>
+      </section>
+
+      <section>
+        <h2>Changes to this policy</h2>
+        <p>We may update this policy as the app grows. Significant changes will be communicated via the app or email. Continued use of the app after changes constitutes acceptance.</p>
+      </section>
+
+      <section>
+        <h2>Contact</h2>
+        <p>Questions about privacy? Email <a href="mailto:keanudevlabs@gmail.com">keanudevlabs@gmail.com</a></p>
+        <p>Responsible party: Keanu Pense, Berlin, Germany.</p>
+      </section>
+
+    </div>
+
+    <footer class="legal-footer">
+      <div class="foot-links">
+        <a href="https://fplpro.app">← Back to FPL Pro</a>
+        <a href="https://fplpro.app/terms">Terms of Service</a>
+      </div>
+      <span class="foot-copy">© 2026 FPL Pro</span>
+    </footer>
+  </div>
+
+  <script>
+    const btn = document.getElementById('themeBtn');
+    const key = 'fplpro-theme';
+    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+    let dark = localStorage.getItem(key) ? localStorage.getItem(key) === 'dark' : prefersDark;
+    function apply() {
+      document.documentElement.classList.toggle('dark', dark);
+      btn.textContent = dark ? '☀️' : '🌙';
+    }
+    apply();
+    btn.addEventListener('click', () => { dark = !dark; localStorage.setItem(key, dark ? 'dark' : 'light'); apply(); });
+  </script>
+</body>
+</html>
