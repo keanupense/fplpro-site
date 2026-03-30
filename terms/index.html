@@ -101,6 +101,10 @@
       font-size: 1.15rem; font-weight: 800; letter-spacing: -.02em;
       margin-bottom: 12px; color: var(--text);
     }
+    .legal-body h3 {
+      font-size: 1rem; font-weight: 700; letter-spacing: -.01em;
+      margin-bottom: 8px; margin-top: 20px; color: var(--text);
+    }
     .legal-body p {
       font-size: .97rem; line-height: 1.75; color: var(--muted);
       margin-bottom: 10px;
@@ -125,7 +129,7 @@
     }
     .card-section h2 { margin-bottom: 14px; }
     .disclaimer-card {
-      background: rgba(212,175,55,.08); border: 1px solid rgba(212,175,55,.25);
+      background: rgba(212,175,55,.08); border: 1px solid rgba(212,175,55,.3);
       border-radius: var(--radius-lg); padding: 20px 24px; margin-bottom: 40px;
     }
     .disclaimer-card p { font-size: .94rem; color: var(--muted); }
@@ -165,88 +169,224 @@
     <div class="legal-body">
 
       <section>
-        <p>These terms govern your use of FPL Pro (the "App"), an iOS application developed by Keanu Pense ("we", "us"). By downloading or using the App, you agree to these terms.</p>
+        <p>These Terms of Service ("Terms") constitute a legally binding agreement between you and Keanu Pense ("we", "us", "our"), the developer of FPL Pro ("the App"). By downloading, installing, or using FPL Pro, you agree to be bound by these Terms in full. If you do not agree, you must not use the App.</p>
+        <p>These Terms should be read alongside our <a href="https://fplpro.app/privacy">Privacy Policy</a>, which is incorporated by reference.</p>
       </section>
 
       <div class="disclaimer-card">
-        <p><strong>Not affiliated with the Premier League.</strong> FPL Pro is an independent third-party app. It is not affiliated with, endorsed by, or sponsored by the Premier League, Fantasy Premier League, or any football club. All FPL data is sourced from the public FPL API.</p>
+        <p><strong>Not affiliated with the Premier League.</strong> FPL Pro is an independent third-party application. It is not affiliated with, endorsed by, licensed by, or sponsored by the Premier League, Fantasy Premier League, EA Sports, or any football club. All FPL data is sourced from the publicly available Fantasy Premier League API. Fantasy Premier League and all associated trademarks are the intellectual property of their respective owners.</p>
       </div>
 
       <section>
-        <h2>What FPL Pro does</h2>
-        <p>FPL Pro is a tool for Fantasy Premier League managers. It reads your FPL team data and provides transfer recommendations, selection advice, fixture analysis, and expected-points calculations. All suggestions are algorithmic — they are not guarantees of performance.</p>
+        <h2>1. About FPL Pro</h2>
+        <p>FPL Pro is an iOS application that helps Fantasy Premier League managers make better transfer and squad selection decisions. The App reads your FPL team data from the official Fantasy Premier League API and applies statistical models to generate transfer recommendations, captain picks, expected-points projections, fixture difficulty ratings, and squad selection advice.</p>
+        <p>FPL Pro is developed and maintained by a solo developer based in Berlin, Germany.</p>
       </section>
 
       <section>
-        <h2>No guarantee of FPL points</h2>
-        <p>FPL Pro's advice is based on statistical models and publicly available data. We make no guarantee, warranty, or representation that following the app's suggestions will result in any particular FPL score, rank improvement, or gameweek outcome. You use the advice at your own discretion.</p>
+        <h2>2. Acceptance of Terms</h2>
+        <p>By downloading, installing, or using FPL Pro, you confirm that:</p>
+        <ul>
+          <li>You have read, understood, and agree to be bound by these Terms</li>
+          <li>You meet the eligibility requirements set out in Section 4</li>
+          <li>You agree to our Privacy Policy</li>
+        </ul>
+        <p>We reserve the right to update these Terms at any time. Continued use of the App following any update constitutes your acceptance of the revised Terms.</p>
+      </section>
+
+      <section>
+        <h2>3. Description of Service</h2>
+        <p>FPL Pro provides the following features:</p>
+        <ul>
+          <li><strong>My Team</strong> — view your current FPL squad, player prices, and team value</li>
+          <li><strong>Transfer Advice</strong> — algorithmic transfer recommendations based on expected points, fixture difficulty, price trends, and ownership data</li>
+          <li><strong>Selection Advice</strong> — squad selection and captain recommendations for upcoming gameweeks</li>
+          <li><strong>Build Team</strong> — squad-building tools and fixture roadmap analysis</li>
+          <li><strong>FDR Matrix</strong> — Fixture Difficulty Rating matrix across multiple gameweeks</li>
+          <li><strong>Player Watchlist</strong> — save and track individual players and teams</li>
+          <li><strong>Sell Value Overrides</strong> — manually adjust player sell values to reflect your actual FPL account</li>
+        </ul>
+        <p>All advice and recommendations are generated algorithmically from publicly available FPL data. They represent statistical suggestions only and do not constitute a guarantee of any particular outcome.</p>
+      </section>
+
+      <section>
+        <h2>4. Eligibility</h2>
+        <p>To use FPL Pro, you must:</p>
+        <ul>
+          <li>Be at least 13 years old, or the minimum digital age of consent in your country if higher</li>
+          <li>Have an active Fantasy Premier League account (required for core features)</li>
+          <li>Have an iOS device running iOS 18.5 or later</li>
+          <li>Agree to and comply with these Terms</li>
+        </ul>
+        <p>By using the App, you represent and warrant that you meet all of these requirements. If you are under 18, you should have the consent of a parent or legal guardian.</p>
+      </section>
+
+      <section>
+        <h2>5. Account Registration and Security</h2>
+        <p>To access personalised features, you must create an FPL Pro account. You may register using email and password, Sign In with Apple, or Google Sign In.</p>
+        <p>You are responsible for:</p>
+        <ul>
+          <li>Providing accurate registration information</li>
+          <li>Maintaining the security and confidentiality of your account credentials</li>
+          <li>All activity that occurs under your account</li>
+          <li>Notifying us immediately if you suspect unauthorised access to your account</li>
+        </ul>
+        <p>We reserve the right to suspend or terminate accounts that violate these Terms. You may delete your account at any time by emailing <a href="mailto:keanudevlabs@gmail.com">keanudevlabs@gmail.com</a> with the subject "Delete my account".</p>
+      </section>
+
+      <section>
+        <h2>6. FPL Account Connection</h2>
+        <p>To use My Team, Transfer Advice, and Selection Advice features, you must connect your Fantasy Premier League account by providing your FPL Entry ID or logging in via the official FPL website within the App.</p>
+        <p>When you authenticate with FPL:</p>
+        <ul>
+          <li>Your FPL session cookies are stored locally on your device in the iOS Keychain</li>
+          <li>We use these cookies solely to fetch your team data from the FPL API on your behalf</li>
+          <li>We never store your FPL username or password</li>
+          <li>Your FPL credentials are entered directly on the official Fantasy Premier League website; we have no access to them</li>
+        </ul>
+        <p>You are responsible for ensuring your use of FPL data complies with Fantasy Premier League's own Terms of Use. FPL Pro is not responsible for any account actions taken by the Premier League.</p>
+      </section>
+
+      <section>
+        <h2>7. No Guarantee of Performance</h2>
+        <p>FPL Pro's advice, recommendations, captain picks, transfer suggestions, and expected-points projections are based on statistical models and publicly available data. They do not constitute a guarantee of any particular outcome.</p>
+        <p>We make no warranty, express or implied, that:</p>
+        <ul>
+          <li>Following any recommendation will result in points gains</li>
+          <li>Any projection will be accurate</li>
+          <li>The App's advice will improve your FPL rank, score, or mini-league position</li>
+          <li>Any specific player will perform as projected</li>
+        </ul>
+        <p>You use all advice entirely at your own discretion and risk. We are not liable for any FPL results, rank changes, or mini-league outcomes.</p>
       </section>
 
       <div class="card-section">
-        <h2>Pricing and subscriptions</h2>
+        <h2>8. Beta Phase and Pricing</h2>
+
+        <h3>Current Status — Free Beta</h3>
+        <p>FPL Pro is currently in a free beta phase for the remainder of the 2024/25 FPL season. All features are available at no cost during this period. No payment is required.</p>
+
+        <h3>Future Paid Subscription</h3>
+        <p>From the start of the 2025/26 FPL season (approximately August 2026), FPL Pro will introduce a paid subscription tier:</p>
         <ul>
-          <li><strong>Beta period (now — end of 2024/25 season):</strong> FPL Pro is completely free. No payment required.</li>
-          <li><strong>From August 2026 (2025/26 season):</strong> A paid subscription will be introduced. Pricing will be announced before the season starts. Existing users will be given advance notice.</li>
-          <li><strong>Free tier:</strong> A free tier with limited features will remain available after monetisation begins.</li>
-          <li><strong>Billing:</strong> Subscriptions are processed through Apple's in-app purchase system (StoreKit). Apple's payment terms apply.</li>
-          <li><strong>Refunds:</strong> Subscription refunds are handled by Apple. Contact Apple Support to request a refund.</li>
+          <li>Pricing will be announced before the new season begins</li>
+          <li>Existing users will receive advance notice before any payment is required</li>
+          <li>A free tier with limited features will remain available after monetisation begins</li>
+          <li>Premium features will require an active paid subscription</li>
+        </ul>
+
+        <h3>Billing and Payments</h3>
+        <ul>
+          <li>All subscriptions are processed through Apple's in-app purchase system (StoreKit)</li>
+          <li>Apple's payment terms and conditions apply to all purchases</li>
+          <li>We do not directly handle payment card data; this is managed entirely by Apple</li>
+        </ul>
+
+        <h3>Refunds</h3>
+        <ul>
+          <li>Subscription refunds are processed by Apple, not by us</li>
+          <li>To request a refund, contact Apple Support or visit <a href="https://reportaproblem.apple.com" target="_blank" rel="noopener">reportaproblem.apple.com</a></li>
         </ul>
       </div>
 
       <section>
-        <h2>Eligibility</h2>
+        <h2>9. Advertising</h2>
+        <p>FPL Pro is integrated with Google AdMob for future in-app advertising. <strong>Advertising is not yet active and will be introduced in a future update.</strong> When active, advertisements may appear in certain sections of the App. Advertisements will be clearly distinguishable from App content.</p>
+        <p>You can opt out of personalised advertising at any time via iOS Settings → Privacy &amp; Security → Tracking. Premium subscribers (once paid subscriptions are introduced) may have the option to disable advertisements.</p>
+      </section>
+
+      <section>
+        <h2>10. Intellectual Property</h2>
+        <p>All content, design, code, algorithms, brand assets, and user interface elements of FPL Pro are the intellectual property of Keanu Pense, protected by applicable copyright, trademark, and other intellectual property laws.</p>
+        <p>You are granted a limited, non-exclusive, non-transferable, revocable licence to use FPL Pro on your personal iOS device(s) for personal, non-commercial purposes, subject to these Terms.</p>
+        <p>You may not copy, reproduce, distribute, modify, adapt, create derivative works from, or use any FPL Pro branding, logos, or assets without prior written permission.</p>
+        <p>Fantasy Premier League, Premier League, and associated trademarks are the property of the Premier League. All football club names, logos, and trademarks are the property of their respective owners. FPL Pro makes no claim to any of these marks.</p>
+      </section>
+
+      <section>
+        <h2>11. Prohibited Uses</h2>
+        <p>You agree not to use FPL Pro to:</p>
         <ul>
-          <li>You must be at least 13 years old to use FPL Pro.</li>
-          <li>You must have an active Fantasy Premier League account to use core features.</li>
-          <li>FPL Pro is currently available on iOS only.</li>
+          <li>Violate any applicable law or regulation</li>
+          <li>Reverse engineer, decompile, disassemble, or attempt to extract the source code of the App</li>
+          <li>Circumvent, disable, or interfere with any security or access control mechanism in the App</li>
+          <li>Automate, scrape, or systematically collect data from FPL Pro or the FPL API at scale</li>
+          <li>Attempt to gain unauthorised access to any server, database, or account</li>
+          <li>Impersonate any person or entity</li>
+          <li>Upload or transmit viruses, malware, or any malicious code</li>
+          <li>Use the App for commercial resale or redistribution without written permission</li>
+          <li>Interfere with or disrupt the integrity or performance of the App or its underlying services</li>
         </ul>
       </section>
 
       <section>
-        <h2>Your account</h2>
-        <p>You are responsible for maintaining the security of your account credentials. We are not liable for any loss resulting from unauthorised access to your account. You can delete your account at any time by emailing <a href="mailto:keanudevlabs@gmail.com">keanudevlabs@gmail.com</a>.</p>
-      </section>
-
-      <section>
-        <h2>Acceptable use</h2>
-        <p>You agree not to:</p>
+        <h2>12. Third-Party Services</h2>
+        <p>FPL Pro integrates with the following third-party services. Your use of these services is governed by their respective terms:</p>
         <ul>
-          <li>Reverse engineer, decompile, or disassemble the App</li>
-          <li>Use the App to scrape or systematically access FPL data at scale</li>
-          <li>Attempt to circumvent any subscription or access controls</li>
-          <li>Use the App for any unlawful purpose</li>
+          <li><strong>Supabase</strong> — backend and authentication (<a href="https://supabase.com/terms" target="_blank" rel="noopener">supabase.com/terms</a>)</li>
+          <li><strong>Apple</strong> — Sign In with Apple, App Store, StoreKit (<a href="https://www.apple.com/legal/internet-services/itunes/" target="_blank" rel="noopener">apple.com/legal</a>)</li>
+          <li><strong>Google</strong> — Google Sign In, Google AdMob (<a href="https://policies.google.com/terms" target="_blank" rel="noopener">policies.google.com/terms</a>)</li>
+          <li><strong>Fantasy Premier League API</strong> — data provided by the Premier League (<a href="https://www.premierleague.com/terms" target="_blank" rel="noopener">premierleague.com/terms</a>)</li>
         </ul>
+        <p>We are not responsible for the availability, accuracy, or conduct of any third-party service.</p>
       </section>
 
       <section>
-        <h2>Intellectual property</h2>
-        <p>FPL Pro, its design, algorithms, and content are the property of Keanu Pense. Premier League, Fantasy Premier League, and related marks are the property of their respective owners. FPL Pro makes no claim to these marks.</p>
+        <h2>13. Disclaimer of Warranties</h2>
+        <p>To the maximum extent permitted by applicable law, FPL Pro is provided "as is" and "as available" without warranty of any kind, whether express, implied, or statutory. We specifically disclaim all warranties of merchantability, fitness for a particular purpose, non-infringement, accuracy or reliability of any advice or projection, and uninterrupted or error-free operation.</p>
+        <p>We do not warrant that the App will be available at any particular time, that it will be free of errors, or that any defects will be corrected.</p>
       </section>
 
       <section>
-        <h2>Limitation of liability</h2>
-        <p>To the maximum extent permitted by law, FPL Pro is provided "as is" without warranty of any kind. We are not liable for any indirect, incidental, or consequential damages arising from your use of the App, including but not limited to losses in FPL mini-leagues or season rankings.</p>
+        <h2>14. Limitation of Liability</h2>
+        <p>To the maximum extent permitted by applicable law, Keanu Pense shall not be liable for any indirect, incidental, special, consequential, or punitive damages, including but not limited to loss of FPL points, rank, or mini-league position, loss of data, or loss of profits or revenue.</p>
+        <p>Our total aggregate liability to you for all claims arising under these Terms shall not exceed the amount you paid to us in the 12 months preceding the claim, or €10, whichever is greater.</p>
+        <p>Nothing in these Terms limits liability that cannot be excluded under applicable law, including liability for fraud or personal injury caused by negligence.</p>
       </section>
 
       <section>
-        <h2>Service availability</h2>
-        <p>We aim for high availability but do not guarantee uninterrupted service. We may update, modify, or discontinue features at any time. We will provide reasonable notice for significant changes.</p>
+        <h2>15. Indemnification</h2>
+        <p>You agree to indemnify and hold harmless Keanu Pense from and against any claims, damages, losses, costs, and expenses (including reasonable legal fees) arising from your use of the App in violation of these Terms, your violation of any applicable law, or your infringement of any third-party intellectual property or other rights.</p>
       </section>
 
       <section>
-        <h2>Governing law</h2>
-        <p>These terms are governed by the laws of Germany. Any disputes shall be subject to the exclusive jurisdiction of the courts of Berlin, Germany, unless mandatory consumer protection laws in your country require otherwise.</p>
+        <h2>16. Service Availability and Modifications</h2>
+        <p>We aim to provide a reliable service but do not guarantee uninterrupted availability. We may at any time update, modify, or discontinue any feature of the App, perform maintenance that temporarily interrupts service, or change the pricing or feature set with advance notice as described in Section 8.</p>
+        <p>We are not liable for any interruption or modification to the service.</p>
       </section>
 
       <section>
-        <h2>Changes to these terms</h2>
-        <p>We may update these terms from time to time. Continued use of the App after changes constitutes acceptance. We will notify you of material changes via the App or email.</p>
+        <h2>17. Termination</h2>
+        <p><strong>By you:</strong> You may stop using FPL Pro at any time. You may delete your account by emailing <a href="mailto:keanudevlabs@gmail.com">keanudevlabs@gmail.com</a> with the subject "Delete my account".</p>
+        <p><strong>By us:</strong> We may suspend or terminate your access to FPL Pro at any time, with or without notice, if you violate these Terms, we are required to do so by law, or we discontinue the service. Upon termination, your right to use the App ceases immediately. Sections 10, 13, 14, 15, and 18 survive termination.</p>
       </section>
 
       <section>
-        <h2>Contact</h2>
-        <p>Questions about these terms? Email <a href="mailto:keanudevlabs@gmail.com">keanudevlabs@gmail.com</a></p>
-        <p>Keanu Pense, Berlin, Germany.</p>
+        <h2>18. Governing Law and Dispute Resolution</h2>
+        <p>These Terms are governed by and construed in accordance with the laws of the Federal Republic of Germany, excluding its conflict of law provisions. Any disputes arising from or related to these Terms or your use of FPL Pro shall be subject to the exclusive jurisdiction of the courts of Berlin, Germany.</p>
+        <p>If you are a consumer located in another EU member state, you may also have the right to bring proceedings in your country of residence under mandatory consumer protection laws. EU consumers may also use the European Commission's Online Dispute Resolution platform: <a href="https://ec.europa.eu/odr" target="_blank" rel="noopener">ec.europa.eu/odr</a></p>
+      </section>
+
+      <section>
+        <h2>19. Severability</h2>
+        <p>If any provision of these Terms is found to be invalid, illegal, or unenforceable, the remaining provisions shall continue in full force and effect. The invalid provision shall be modified to the minimum extent necessary to make it enforceable.</p>
+      </section>
+
+      <section>
+        <h2>20. Entire Agreement</h2>
+        <p>These Terms, together with our Privacy Policy, constitute the entire agreement between you and Keanu Pense regarding FPL Pro and supersede all prior agreements, representations, or understandings.</p>
+      </section>
+
+      <section>
+        <h2>21. Changes to These Terms</h2>
+        <p>We may update these Terms from time to time. The "Last updated" date at the top reflects the current version. We will notify you of material changes via the App or email. Continued use of FPL Pro after the effective date of any change constitutes your acceptance of the revised Terms.</p>
+      </section>
+
+      <section>
+        <h2>22. Contact</h2>
+        <p>Questions about these Terms?</p>
+        <p><strong>Email:</strong> <a href="mailto:keanudevlabs@gmail.com">keanudevlabs@gmail.com</a><br>
+        <strong>Developer:</strong> Keanu Pense, Berlin, Germany</p>
       </section>
 
     </div>

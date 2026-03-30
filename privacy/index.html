@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Privacy Policy — FPL Pro</title>
-  <meta name="description" content="FPL Pro Privacy Policy. We collect only what's necessary to run the app. No selling your data." />
+  <meta name="description" content="FPL Pro Privacy Policy. Full details on what data we collect, how we use it, and your GDPR rights." />
   <style>
     :root {
       --bg: #f5f5f7;
@@ -101,6 +101,10 @@
       font-size: 1.15rem; font-weight: 800; letter-spacing: -.02em;
       margin-bottom: 12px; color: var(--text);
     }
+    .legal-body h3 {
+      font-size: 1rem; font-weight: 700; letter-spacing: -.01em;
+      margin-bottom: 8px; margin-top: 20px; color: var(--text);
+    }
     .legal-body p {
       font-size: .97rem; line-height: 1.75; color: var(--muted);
       margin-bottom: 10px;
@@ -124,6 +128,18 @@
       border-radius: var(--radius-lg); padding: 24px 28px; margin-bottom: 40px;
     }
     .card-section h2 { margin-bottom: 14px; }
+    .table-wrap { overflow-x: auto; margin-bottom: 10px; }
+    table { width: 100%; border-collapse: collapse; font-size: .93rem; }
+    th {
+      text-align: left; font-weight: 700; color: var(--text);
+      padding: 8px 12px; border-bottom: 2px solid var(--line);
+      white-space: nowrap;
+    }
+    td {
+      padding: 10px 12px; border-bottom: 1px solid var(--line);
+      color: var(--muted); line-height: 1.5; vertical-align: top;
+    }
+    tr:last-child td { border-bottom: none; }
 
     .legal-footer {
       border-top: 1px solid var(--line); padding: 32px 0;
@@ -160,84 +176,255 @@
     <div class="legal-body">
 
       <section>
-        <p>FPL Pro is built by a solo developer. This policy explains what data is collected, why, and how it is handled. Short version: we collect only what's needed to run the app, we don't sell your data, and you can delete everything by emailing us.</p>
+        <p>This Privacy Policy explains how Keanu Pense ("we", "us", "our"), operating as the developer of FPL Pro ("the App"), collects, uses, stores, and protects your personal data when you use FPL Pro on iOS. We are committed to handling your data responsibly. This policy is written to be clear and complete. If something is unclear, contact us at <a href="mailto:keanudevlabs@gmail.com">keanudevlabs@gmail.com</a>.</p>
+        <p>By downloading or using FPL Pro, you acknowledge that you have read and understood this policy.</p>
+      </section>
+
+      <section>
+        <h2>1. Who We Are (Data Controller)</h2>
+        <p>The data controller responsible for your personal data is:</p>
+        <p><strong>Keanu Pense</strong><br>Berlin, Germany<br><a href="mailto:keanudevlabs@gmail.com">keanudevlabs@gmail.com</a></p>
+        <p>As a sole developer based in Germany, we are subject to the EU General Data Protection Regulation (GDPR) and the German Bundesdatenschutzgesetz (BDSG).</p>
       </section>
 
       <div class="card-section">
-        <h2>What we collect</h2>
+        <h2>2. What Data We Collect</h2>
+
+        <h3>2.1 Account Data</h3>
+        <p>When you create an FPL Pro account, we collect:</p>
         <ul>
-          <li><strong>FPL Team ID</strong> — entered by you to load your squad and transfer history from the official FPL API. Stored locally on your device.</li>
-          <li><strong>FPL session credentials</strong> — used transiently to authenticate your team. Passed through a secure proxy server and never logged or stored on our end.</li>
-          <li><strong>Apple ID / email address</strong> — collected at sign-in via Apple Sign In or email auth. Used only for account management.</li>
-          <li><strong>In-app events</strong> — anonymised analytics (screen views, feature usage, errors) via PostHog. No personal identifiers are attached.</li>
-          <li><strong>Device info</strong> — iOS version, device model — used only for crash diagnostics.</li>
+          <li>Your email address (via email/password signup, Sign In with Apple, or Google Sign In)</li>
+          <li>A unique user identifier (UUID) assigned by our authentication provider (Supabase)</li>
+          <li>Your display name (optional, if set)</li>
+          <li>Your avatar URL (optional, if provided by Apple or Google profile)</li>
+          <li>Your device locale</li>
+        </ul>
+
+        <h3>2.2 FPL Account Data</h3>
+        <p>When you connect your Fantasy Premier League team, we collect and store:</p>
+        <ul>
+          <li><strong>FPL Entry ID</strong> — your FPL team number, stored locally on your device and synced to our cloud database</li>
+          <li><strong>FPL squad data</strong> — players, positions, selling prices, and purchase prices, fetched from the FPL API to generate advice; not stored permanently on our servers</li>
+          <li><strong>FPL transfer history and season history</strong> — fetched on demand from the FPL API; not stored permanently on our servers</li>
+          <li><strong>FPL session cookies</strong> — stored in your device's secure Keychain to avoid repeated logins; not transmitted to or stored on our servers</li>
+        </ul>
+
+        <h3>2.3 App Preferences and Settings</h3>
+        <ul>
+          <li>Dark mode preference</li>
+          <li>Selected gameweek</li>
+          <li>Advice date range settings</li>
+          <li>These are stored locally on your device and synced to our cloud database under your account</li>
+        </ul>
+
+        <h3>2.4 Watchlist Data</h3>
+        <ul>
+          <li>Player IDs you have saved to your watchlist</li>
+          <li>Team IDs you have saved to your watchlist</li>
+          <li>Stored in our cloud database and synced across your devices</li>
+        </ul>
+
+        <h3>2.5 Sell Value Overrides</h3>
+        <ul>
+          <li>Custom selling price adjustments you enter for individual players</li>
+          <li>Stored in our cloud database per user</li>
+        </ul>
+
+        <h3>2.6 Premium and Subscription Status</h3>
+        <ul>
+          <li>Whether your account has premium access</li>
+          <li>The source of premium access (e.g. in-app purchase)</li>
+          <li>Expiry date of premium access if applicable</li>
+        </ul>
+
+        <h3>2.7 Newsletter Email (Optional)</h3>
+        <p>If you choose to sign up for our gameweek tips newsletter:</p>
+        <ul>
+          <li>Your email address</li>
+          <li>Your user ID if you are signed in at the time</li>
+          <li>Signup is entirely optional and can be requested for deletion at any time</li>
+        </ul>
+
+        <h3>2.8 Sync Metadata</h3>
+        <ul>
+          <li>Timestamp of last cloud sync, reason for sync, current gameweek at time of sync, and app snapshot version</li>
+          <li>Used solely to manage cross-device sync reliability</li>
+        </ul>
+
+        <h3>2.9 What We Do NOT Collect</h3>
+        <ul>
+          <li>We do not collect your location</li>
+          <li>We do not access your contacts, calendar, camera, or microphone</li>
+          <li>We do not collect your FPL password — it is entered directly on the official FPL website inside a WebView; we never see or store it</li>
+          <li>We do not use any third-party behavioural analytics SDK (no PostHog, no Firebase Analytics, no Mixpanel)</li>
+          <li>We do not build advertising profiles or engage in cross-app tracking</li>
         </ul>
       </div>
 
       <section>
-        <h2>How we use your data</h2>
+        <h2>3. How We Collect Your Data</h2>
         <ul>
-          <li>To load your FPL team and generate transfer &amp; selection advice</li>
-          <li>To manage your account and subscription status</li>
-          <li>To understand how the app is used and fix bugs</li>
-          <li>To send important app updates (not marketing emails)</li>
+          <li><strong>Directly from you</strong> — when you register, connect your FPL team, set preferences, or sign up for the newsletter</li>
+          <li><strong>From the FPL API</strong> — when you load your team, the App fetches data from fantasy.premierleague.com on your behalf using your stored session</li>
+          <li><strong>From Apple or Google</strong> — when you use Sign In with Apple or Google Sign In, we receive your email address and a unique identifier from those providers</li>
+          <li><strong>Automatically during use</strong> — app preferences and sync metadata are captured as you use the App</li>
         </ul>
       </section>
 
       <section>
-        <h2>Third-party services</h2>
-        <p>FPL Pro uses the following third parties, each with their own privacy policies:</p>
+        <h2>4. Legal Basis for Processing (GDPR)</h2>
+        <p>Under GDPR, we rely on the following legal bases for processing your personal data:</p>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr><th>Data</th><th>Legal Basis</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>Account data, FPL Entry ID</td><td>Contract — necessary to provide the service</td></tr>
+              <tr><td>Preferences, watchlist, sync metadata</td><td>Contract — necessary to provide the service</td></tr>
+              <tr><td>Newsletter email</td><td>Consent — you opted in voluntarily</td></tr>
+              <tr><td>Premium and subscription status</td><td>Contract — necessary to manage your subscription</td></tr>
+              <tr><td>AdMob advertising data (when active)</td><td>Legitimate interests / Consent as required by applicable law</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p>You may withdraw consent for newsletter communications at any time by contacting us or using any unsubscribe link in our emails.</p>
+      </section>
+
+      <section>
+        <h2>5. How We Use Your Data</h2>
+        <p>We use your data exclusively to:</p>
         <ul>
-          <li><strong>Supabase</strong> — authentication and account data. Data hosted in the EU.</li>
-          <li><strong>PostHog</strong> — anonymised product analytics. Data hosted in the EU.</li>
-          <li><strong>Apple</strong> — Sign In with Apple, App Store payments, StoreKit subscriptions.</li>
-          <li><strong>Fantasy Premier League API</strong> — public FPL data (players, fixtures, scores). We do not control this data.</li>
+          <li>Create and manage your FPL Pro account</li>
+          <li>Load your FPL team data and generate personalised transfer and selection advice</li>
+          <li>Sync your preferences, watchlist, and settings across your devices</li>
+          <li>Manage your premium subscription status</li>
+          <li>Send you the gameweek tips newsletter (only if you opted in)</li>
+          <li>Display advertisements via Google AdMob (not yet active — see Section 8)</li>
+          <li>Maintain and improve the reliability of the App</li>
         </ul>
-        <p>We do not sell, rent, or share your personal data with any other third parties.</p>
+        <p>We do not use your data for automated decision-making or profiling beyond generating FPL advice from your own team data.</p>
       </section>
 
       <section>
-        <h2>Analytics (PostHog)</h2>
-        <p>We use PostHog to understand which features are used and where errors occur. Events are anonymised — we cannot identify you from analytics data. No advertising IDs or cross-site tracking are used. You can opt out of analytics in the app's Settings screen.</p>
+        <h2>6. Third-Party Services</h2>
+
+        <h3>6.1 Supabase</h3>
+        <p>We use Supabase for user authentication and cloud data storage. Supabase stores your account data, preferences, watchlist, FPL Entry ID, premium status, and newsletter signups. Data is hosted in the EU. Supabase is a US company operating with EU data residency and Standard Contractual Clauses. <a href="https://supabase.com/privacy" target="_blank" rel="noopener">Supabase Privacy Policy</a></p>
+
+        <h3>6.2 Apple</h3>
+        <p>Sign In with Apple provides your email and Apple user identifier when you choose this login method. Apple also processes all in-app subscription payments via StoreKit — we receive only confirmation of subscription status, not your payment details. <a href="https://www.apple.com/privacy/" target="_blank" rel="noopener">Apple Privacy Policy</a></p>
+
+        <h3>6.3 Google</h3>
+        <p>Google Sign In (via OAuth) provides your email and Google user identifier if you choose to sign in with Google. <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy Policy</a></p>
+
+        <h3>6.4 Google AdMob</h3>
+        <p>FPL Pro is integrated with Google AdMob for future advertising. <strong>Advertising is not yet active and will be introduced in a future update.</strong> When active, AdMob may collect a device advertising identifier (IDFA on iOS, if permitted), IP address, and app usage context for ad targeting. You can limit ad tracking at any time in iOS Settings → Privacy &amp; Security → Tracking. <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google AdMob Privacy Policy</a></p>
+
+        <h3>6.5 Fantasy Premier League API</h3>
+        <p>FPL Pro reads data from the official FPL API (fantasy.premierleague.com), operated by the Premier League. This includes public data (player statistics, fixtures, gameweek data) and your private team data (squad, picks, transfers, history) accessed using your FPL session. We are not affiliated with the Premier League. <a href="https://www.premierleague.com/privacypolicy" target="_blank" rel="noopener">Premier League Privacy Policy</a></p>
+
+        <p>We do not sell, rent, or share your personal data with any third party beyond the services listed above.</p>
       </section>
 
       <section>
-        <h2>Data storage and security</h2>
-        <p>Your account data is stored on Supabase servers located in the EU. Your FPL Team ID and preferences are stored locally on your device using Apple's secure storage APIs. We use HTTPS for all network communication.</p>
-      </section>
+        <h2>7. Local Storage on Your Device</h2>
 
-      <section>
-        <h2>Your rights (GDPR)</h2>
-        <p>If you are in the EU or EEA, you have the right to:</p>
+        <h3>iOS Keychain (encrypted, secure)</h3>
         <ul>
-          <li>Access the personal data we hold about you</li>
-          <li>Correct inaccurate data</li>
-          <li>Request deletion of your account and data</li>
-          <li>Object to or restrict processing</li>
-          <li>Data portability</li>
+          <li>Your FPL session cookies — used to re-authenticate without requiring a new login</li>
+          <li>Your FPL Entry ID</li>
+          <li>Your Supabase authentication context</li>
         </ul>
-        <p>To exercise any of these rights, email us at <a href="mailto:keanudevlabs@gmail.com">keanudevlabs@gmail.com</a>. We will respond within 30 days.</p>
+        <p>Keychain data is protected by iOS encryption with <em>AfterFirstUnlock</em> accessibility — it is accessible only after the device has been unlocked at least once after a restart.</p>
+
+        <h3>UserDefaults</h3>
+        <ul>
+          <li>Your Supabase user ID (a non-sensitive identifier)</li>
+          <li>Your email address (for display purposes)</li>
+          <li>App preferences such as dark mode setting</li>
+          <li>A local mirror of your FPL Entry ID for fast access</li>
+        </ul>
       </section>
 
       <section>
-        <h2>Data deletion</h2>
-        <p>You can delete your FPL Pro account and all associated data by emailing <a href="mailto:keanudevlabs@gmail.com">keanudevlabs@gmail.com</a> with the subject line "Delete my account". We will process this within 30 days.</p>
+        <h2>8. Cookies and Web Tracking</h2>
+        <p>FPL Pro does not use browser cookies in the traditional sense. However, when you log in to FPL through the in-app WebView, cookies set by fantasy.premierleague.com are captured and stored in your device Keychain. These cookies are used solely to authenticate subsequent FPL API requests on your behalf.</p>
+        <p>We do not use tracking pixels, fingerprinting, or any cross-site tracking technologies. Google AdMob may use a device advertising identifier (IDFA) once advertising is active and if you have granted tracking permission via iOS App Tracking Transparency. You can revoke this in iOS Settings at any time.</p>
       </section>
 
       <section>
-        <h2>Children</h2>
-        <p>FPL Pro is not directed at children under 13. We do not knowingly collect data from children. If you believe we have inadvertently collected data from a child, please contact us to have it removed.</p>
+        <h2>9. Analytics</h2>
+        <p>FPL Pro does not use any third-party analytics SDK. App performance data is available to us through Apple's built-in App Store Connect Analytics, which provides aggregated, non-identifiable statistics such as install counts, session counts, and crash reports. We do not receive personal data through Apple Analytics.</p>
       </section>
 
       <section>
-        <h2>Changes to this policy</h2>
-        <p>We may update this policy as the app grows. Significant changes will be communicated via the app or email. Continued use of the app after changes constitutes acceptance.</p>
+        <h2>10. Data Storage and Security</h2>
+        <ul>
+          <li>All cloud data is stored on Supabase servers in the EU</li>
+          <li>All network communication uses HTTPS/TLS encryption</li>
+          <li>Sensitive credentials (FPL session cookies, authentication tokens) are stored in the iOS Keychain, which is hardware-encrypted on modern iPhones</li>
+          <li>We do not log or store your FPL username or password at any point</li>
+          <li>We take reasonable technical and organisational measures to protect your data</li>
+        </ul>
+        <p>No system is 100% secure. In the unlikely event of a data breach affecting your personal data, we will notify you as required by applicable law.</p>
       </section>
 
       <section>
-        <h2>Contact</h2>
-        <p>Questions about privacy? Email <a href="mailto:keanudevlabs@gmail.com">keanudevlabs@gmail.com</a></p>
-        <p>Responsible party: Keanu Pense, Berlin, Germany.</p>
+        <h2>11. Data Retention</h2>
+        <ul>
+          <li><strong>Account data</strong> is retained as long as your account is active. If you delete your account, we will delete your personal data within 30 days.</li>
+          <li><strong>Newsletter signups</strong> are retained until you request removal.</li>
+          <li><strong>Local device data</strong> (Keychain, UserDefaults) is cleared when you sign out or delete the App.</li>
+          <li><strong>FPL API data</strong> (squad, transfers, history) is fetched on demand and not stored permanently on our servers.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>12. International Data Transfers</h2>
+        <p>Your data may be transferred outside your country of residence:</p>
+        <ul>
+          <li><strong>Supabase</strong> stores data in the EU. As a US company using EU data residency, transfers are covered by Standard Contractual Clauses (SCCs).</li>
+          <li><strong>Google</strong> (AdMob, Google Sign In) is based in the USA. Transfers are subject to Google's GDPR data transfer mechanisms.</li>
+          <li><strong>Apple</strong> is based in the USA. Transfers are subject to Apple's GDPR transfer mechanisms.</li>
+        </ul>
+        <p>By using FPL Pro, you acknowledge these transfers. We only use providers with adequate data protection frameworks under GDPR.</p>
+      </section>
+
+      <div class="card-section">
+        <h2>13. Your Rights Under GDPR</h2>
+        <p>If you are in the EU or EEA, you have the following rights regarding your personal data:</p>
+        <ul>
+          <li><strong>Right of access</strong> — request a copy of the personal data we hold about you</li>
+          <li><strong>Right to rectification</strong> — request correction of inaccurate or incomplete data</li>
+          <li><strong>Right to erasure</strong> ("right to be forgotten") — request deletion of your account and all associated personal data</li>
+          <li><strong>Right to restriction</strong> — request that we limit how we process your data in certain circumstances</li>
+          <li><strong>Right to data portability</strong> — receive your data in a structured, machine-readable format</li>
+          <li><strong>Right to object</strong> — object to processing based on legitimate interests</li>
+          <li><strong>Right to withdraw consent</strong> — for any processing based on consent, such as newsletter subscription, at any time</li>
+          <li><strong>Right to lodge a complaint</strong> — with your national data protection authority. In Germany: Berliner Beauftragte für Datenschutz und Informationsfreiheit (<a href="https://www.datenschutz-berlin.de" target="_blank" rel="noopener">datenschutz-berlin.de</a>)</li>
+        </ul>
+        <p>To exercise any of these rights, email <a href="mailto:keanudevlabs@gmail.com">keanudevlabs@gmail.com</a>. We will respond within 30 days.</p>
+      </div>
+
+      <section>
+        <h2>14. Children's Privacy</h2>
+        <p>FPL Pro is not directed at children under 13 years of age (COPPA) or children under 16 in EU member states where a higher age of digital consent applies (GDPR Article 8). We do not knowingly collect personal data from children below the applicable minimum age.</p>
+        <p>If you believe we have inadvertently collected data from a child under the applicable minimum age, please contact us immediately at <a href="mailto:keanudevlabs@gmail.com">keanudevlabs@gmail.com</a> and we will delete it promptly.</p>
+      </section>
+
+      <section>
+        <h2>15. Changes to This Policy</h2>
+        <p>We may update this policy as the App evolves. The "Last updated" date at the top of this page will always reflect the most recent version. For material changes, we will notify you via the App or by email. Continued use of FPL Pro after changes constitutes acceptance of the updated policy.</p>
+      </section>
+
+      <section>
+        <h2>16. Contact and Data Deletion</h2>
+        <p>For privacy questions, data access requests, or account deletion:</p>
+        <p><strong>Email:</strong> <a href="mailto:keanudevlabs@gmail.com">keanudevlabs@gmail.com</a><br>
+        <strong>Subject for deletion requests:</strong> "Delete my account"</p>
+        <p><strong>Data controller:</strong><br>Keanu Pense, Berlin, Germany</p>
+        <p>We will respond within 30 days of receiving your request.</p>
       </section>
 
     </div>
