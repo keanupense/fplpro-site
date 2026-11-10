@@ -287,6 +287,8 @@
       border-color: #bbb;
       box-shadow: 0 0 0 4px rgba(212,175,55,.12);
     }
+    .signup-consent { flex-basis: 100%; display: flex; gap: 8px; align-items: flex-start; text-align: left; font-size: .82rem; line-height: 1.45; color: var(--muted); margin-top: 4px; }
+    .signup-consent input { margin-top: 3px; width: auto; flex: none; }
     .signup-legal {
       margin-top: 10px;
       color: var(--muted2);
@@ -917,8 +919,9 @@
       <form class="signup-form" action="https://formspree.io/f/maqlyroe" method="POST">
         <input type="email" name="email" placeholder="Your email address" required />
         <button class="btn btn-gold" type="submit">Join the list</button>
+        <label class="signup-consent"><input type="checkbox" name="consent" value="yes" required /> <span>I agree to receive occasional emails about FPL Pro. I can withdraw at any time by emailing keanudevlabs@gmail.com. Details in the <a href="/privacy/">Privacy Policy</a>.</span></label>
       </form>
-      <p class="signup-legal">By signing up, your email may be used for FPL Pro updates. Unsubscribe anytime at keanudevlabs@gmail.com.</p>
+      <p class="signup-legal">Your email is processed by Formspree (USA) and used only for FPL Pro news.</p>
     </div>
   </section>
 
@@ -1318,10 +1321,10 @@
       <div class="footer-copy">Data-driven transfer & team advice for Fantasy Premier League. Native iPhone app. Free until end of season.</div>
     </div>
     <div class="footer-links">
-      <a href="#privacy">Privacy Policy</a>
-      <a href="#terms">Terms of Use</a>
-      <a href="#impressum">Impressum</a>
-      <a href="#support-modal">Support</a>
+      <a href="/privacy/">Privacy Policy</a>
+      <a href="/terms/">Terms of Use</a>
+      <a href="/impressum/">Impressum</a>
+      <a href="/support/">Support</a>
       <a href="mailto:keanudevlabs@gmail.com">keanudevlabs@gmail.com</a>
     </div>
   </div>
@@ -1332,99 +1335,9 @@
 </div>
 
 <!-- MODALS -->
-<section class="modal" id="privacy">
-  <div class="modal-card legal">
-    <div class="modal-top">
-      <h2>Privacy Policy</h2>
-      <a class="modal-close" href="#top">×</a>
-    </div>
-    <p>This Privacy Policy explains how FPL Pro processes personal data when you use the website, sign up for updates, contact support, or use the app.</p>
-    <h3>Controller</h3>
-    <p>Keanu Rahiem Pense<br />Herthastraße 1d<br />14193 Berlin<br />Germany<br />Email: <a href="mailto:keanudevlabs@gmail.com">keanudevlabs@gmail.com</a><br />Phone: <a href="tel:+4917620332803">+49 176 20332803</a></p>
-    <h3>What data we process</h3>
-    <ul>
-      <li>email address submitted through the email signup form,</li>
-      <li>support emails and the information you include in them,</li>
-      <li>account data processed through Supabase authentication,</li>
-      <li>Apple Sign In data processed through Supabase,</li>
-      <li>account-related app data such as saved players and team ID,</li>
-      <li>technical data processed by infrastructure providers.</li>
-    </ul>
-    <h3>What we do not process</h3>
-    <p>FPL Pro does not use advertising SDKs, analytics tools, crash reporting tools, location tracking, payment processing, or cookies for marketing purposes.</p>
-    <h3>How we use your data</h3>
-    <p>To operate the app and website, provide login, maintain your account, store saved players and team ID, respond to support messages, improve the product, and send updates if you signed up.</p>
-    <h3>Legal bases</h3>
-    <p>Data is processed because it is necessary to provide the service, to respond to your request, or based on your consent for newsletter emails.</p>
-    <h3>Email updates</h3>
-    <p>If you sign up, we may use your email to send FPL Pro updates and news. Unsubscribe at any time by contacting <a href="mailto:keanudevlabs@gmail.com">keanudevlabs@gmail.com</a>.</p>
-    <h3>Authentication</h3>
-    <p>FPL Pro uses Supabase for account authentication. Apple Sign In is processed through Supabase.</p>
-    <h3>Service providers</h3>
-    <p>Data may be processed by Supabase, Formspree, Apple, and hosting providers used to operate the service.</p>
-    <h3>Your rights</h3>
-    <p>You may request access, correction, deletion, or restriction of your personal data. Contact <a href="mailto:keanudevlabs@gmail.com">keanudevlabs@gmail.com</a>.</p>
-    <div class="legal-meta">Last updated: March 2026</div>
-  </div>
-</section>
 
-<section class="modal" id="terms">
-  <div class="modal-card legal">
-    <div class="modal-top">
-      <h2>Terms of Use</h2>
-      <a class="modal-close" href="#top">×</a>
-    </div>
-    <p>These Terms govern your use of the FPL Pro website and app.</p>
-    <h3>Operator</h3>
-    <p>FPL Pro is operated by Keanu Rahiem Pense.</p>
-    <h3>Use</h3>
-    <p>FPL Pro is a companion app for Fantasy Premier League. It supports planning, squad management, and transfer decisions.</p>
-    <h3>No guarantee</h3>
-    <p>No transfer suggestion, lineup advice, or projection is guaranteed to be accurate or suitable for your decisions.</p>
-    <h3>Accounts</h3>
-    <p>Some features require login through Supabase, including Apple Sign In. You are responsible for the information you provide.</p>
-    <h3>Free service</h3>
-    <p>FPL Pro is currently free. This may change in the future.</p>
-    <h3>Intellectual property</h3>
-    <p>The app, branding, screenshots, design, and website content may not be copied or reused without permission.</p>
-    <h3>Liability</h3>
-    <p>FPL Pro is provided as-is. To the extent permitted by law, liability for damages is excluded.</p>
-    <h3>Contact</h3>
-    <p><a href="mailto:keanudevlabs@gmail.com">keanudevlabs@gmail.com</a></p>
-    <div class="legal-meta">Last updated: March 2026</div>
-  </div>
-</section>
 
-<section class="modal" id="impressum">
-  <div class="modal-card legal">
-    <div class="modal-top">
-      <h2>Impressum</h2>
-      <a class="modal-close" href="#top">×</a>
-    </div>
-    <p><strong>Information according to § 5 DDG</strong></p>
-    <p>Keanu Rahiem Pense<br />Herthastraße 1d<br />14193 Berlin<br />Germany</p>
-    <h3>Contact</h3>
-    <p>Email: <a href="mailto:keanudevlabs@gmail.com">keanudevlabs@gmail.com</a><br />Phone: <a href="tel:+4917620332803">+49 176 20332803</a></p>
-    <h3>Responsible for content</h3>
-    <p>Keanu Rahiem Pense</p>
-    <div class="legal-meta">Last updated: March 2026</div>
-  </div>
-</section>
 
-<section class="modal" id="support-modal">
-  <div class="modal-card legal">
-    <div class="modal-top">
-      <h2>Support</h2>
-      <a class="modal-close" href="#top">×</a>
-    </div>
-    <p>For bugs, feature requests, or general questions, contact us by email.</p>
-    <h3>Contact</h3>
-    <p>Email: <a href="mailto:keanudevlabs@gmail.com">keanudevlabs@gmail.com</a><br />Phone: <a href="tel:+4917620332803">+49 176 20332803</a></p>
-    <h3>Topics</h3>
-    <p>Login issues, bugs, feedback, saved players, account questions.</p>
-    <div class="legal-meta">Last updated: March 2026</div>
-  </div>
-</section>
 
 <script>
   // Dark mode toggle

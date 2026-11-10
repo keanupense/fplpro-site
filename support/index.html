@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Support — FPL Pro</title>
+  <meta name="description" content="Support for the FPL Pro iPhone app." />
+  <style>
+    :root { --bg:#f5f5f7; --card:#fff; --line:#e4e4ea; --text:#111; --muted:#5f5f66; --accent:#5b2a86; --max:760px; color-scheme: light; }
+    @media (prefers-color-scheme: dark) { :root { --bg:#111113; --card:#1c1c1e; --line:#2c2c2e; --text:#f5f5f7; --muted:#a1a1a8; --accent:#b48cff; color-scheme: dark; } }
+    * { box-sizing:border-box; margin:0; padding:0; }
+    body { font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; background:var(--bg); color:var(--text); -webkit-font-smoothing:antialiased; }
+    a { color:var(--accent); text-decoration:none; } a:hover { text-decoration:underline; }
+    .wrap { width:min(calc(100% - 32px), var(--max)); margin:0 auto; }
+    .nav { position:sticky; top:0; z-index:10; background:color-mix(in srgb, var(--bg) 88%, transparent); backdrop-filter:blur(20px); -webkit-backdrop-filter:blur(20px); border-bottom:1px solid var(--line); }
+    .nav-inner { display:flex; align-items:center; justify-content:space-between; gap:12px; padding:13px 0; }
+    .brand { font-weight:800; letter-spacing:-.03em; color:var(--text); font-size:1.05rem; }
+    .langs a { margin-left:14px; font-size:.9rem; font-weight:600; }
+    .legal-header { padding:56px 0 28px; }
+    .eyebrow { font-size:.75rem; font-weight:700; letter-spacing:.1em; text-transform:uppercase; color:var(--muted); margin-bottom:10px; }
+    h1 { font-size:clamp(2rem, 5vw, 2.8rem); font-weight:850; letter-spacing:-.035em; line-height:1.1; margin-bottom:12px; text-wrap:balance; }
+    .updated { font-size:.85rem; color:var(--muted); }
+    .legal-body section { margin-bottom:30px; }
+    h2 { font-size:1.12rem; font-weight:750; letter-spacing:-.015em; margin-bottom:10px; }
+    .legal-body p, .legal-body li { font-size:.97rem; line-height:1.72; color:var(--muted); }
+    .legal-body p { margin-bottom:10px; max-width:68ch; overflow-wrap:anywhere; }
+    .legal-body ul { list-style:none; display:flex; flex-direction:column; gap:8px; margin-bottom:10px; }
+    .legal-body li { padding-left:16px; position:relative; max-width:68ch; }
+    .legal-body li::before { content:""; position:absolute; left:0; top:.72em; width:6px; height:6px; border-radius:50%; background:var(--accent); }
+    .legal-body strong { color:var(--text); font-weight:650; }
+    hr { border:0; border-top:1px solid var(--line); margin:40px 0 0; }
+    .contact-card { background:var(--card); border:1px solid var(--line); border-radius:22px; padding:22px; margin:8px 0 40px; }
+    .contact-card form { display:grid; gap:14px; margin-top:6px; }
+    .contact-card label { display:grid; gap:6px; font-size:.9rem; font-weight:600; }
+    .contact-card input, .contact-card textarea { font:inherit; padding:12px 14px; border-radius:12px; border:1px solid var(--line); background:var(--bg); color:var(--text); }
+    .contact-card .note { font-size:.82rem; color:var(--muted); line-height:1.5; }
+    .contact-card button { font:inherit; font-weight:700; padding:12px 18px; border-radius:999px; border:0; background:var(--accent); color:#fff; cursor:pointer; justify-self:start; }
+    footer { border-top:1px solid var(--line); padding:26px 0 46px; font-size:.88rem; color:var(--muted); }
+    footer a { margin-right:16px; }
+  </style>
+</head>
+<body>
+  <nav class="nav"><div class="wrap nav-inner">
+    <a class="brand" href="/">FPL Pro</a>
+    <span class="langs"><a href="#en">English</a> <a href="#de">Deutsch</a></span>
+  </div></nav>
+  <main class="wrap">
+<article id="en" lang="en">
+<header class="legal-header"><p class="eyebrow">English</p>
+<h1>Support</h1><p class="updated">Last updated: 9 November 2026</p></header>
+<div class="legal-body">
+<section><h2>Where do I find my FPL Team ID?</h2>
+<p>Open fantasy.premierleague.com in a browser, sign in and tap "Points". The number in the address after /entry/ is your Team ID, for example fantasy.premierleague.com/entry/1234567/event/10. In FPL Pro, tap the page button at the top right, then the round account button, and enter the ID.</p>
+</section>
+<section><h2>Why is there no login?</h2>
+<p>FPL Pro only needs your public Team ID. No password, no account, nothing stored on our servers.</p>
+</section>
+<section><h2>Where does the data come from?</h2>
+<p>Scores, players and points come from the official Fantasy Premier League API, match events and lineups from ESPN. Expected points are calculated on your iPhone.</p>
+</section>
+<section><h2>How do I delete my data?</h2>
+<p>Settings → Data → Remove Team ID and Clear Cache. Deleting the app removes everything.</p>
+</section>
+<section><h2>Contact</h2>
+<p>Write to <a href="mailto:keanudevlabs@gmail.com">keanudevlabs@gmail.com</a> or use the form below. We usually answer within two working days.</p>
+</section>
+</div></article>
+<section class="contact-card" id="contact">
+  <h2>Contact form · Kontaktformular</h2>
+  <form action="https://formspree.io/f/maqlyroe" method="POST">
+    <input type="hidden" name="_subject" value="FPL Pro support" />
+    <label>Email · E-Mail<input type="email" name="email" required autocomplete="email" /></label>
+    <label>Message · Nachricht<textarea name="message" rows="5" required></textarea></label>
+    <p class="note">We use your email and message only to answer you. · Wir nutzen E-Mail und Nachricht nur für die Antwort.
+      <a href="/privacy/">Privacy · Datenschutz</a></p>
+    <button type="submit">Send · Senden</button>
+  </form>
+</section>
+
+<hr>
+<article id="de" lang="de">
+<header class="legal-header"><p class="eyebrow">Deutsch</p>
+<h1>Support</h1><p class="updated">Stand: 9. November 2026</p></header>
+<div class="legal-body">
+<section><h2>Wo finde ich meine FPL-Team-ID?</h2>
+<p>Öffne fantasy.premierleague.com im Browser, melde dich an und tippe auf „Points“. Die Zahl in der Adresse nach /entry/ ist deine Team-ID, zum Beispiel fantasy.premierleague.com/entry/1234567/event/10. In FPL Pro tippst du oben rechts auf den Seiten-Button, dann auf den runden Konto-Button, und gibst die ID ein.</p>
+</section>
+<section><h2>Warum gibt es kein Login?</h2>
+<p>FPL Pro braucht nur deine öffentliche Team-ID. Kein Passwort, kein Konto, nichts auf unseren Servern.</p>
+</section>
+<section><h2>Woher kommen die Daten?</h2>
+<p>Spielstände, Spieler und Punkte kommen von der offiziellen Fantasy-Premier-League-API, Spielereignisse und Aufstellungen von ESPN. Erwartete Punkte werden auf deinem iPhone berechnet.</p>
+</section>
+<section><h2>Wie lösche ich meine Daten?</h2>
+<p>Settings → Data → Remove Team ID und Clear Cache. Beim Löschen der App wird alles entfernt.</p>
+</section>
+<section><h2>Kontakt</h2>
+<p>Schreib an <a href="mailto:keanudevlabs@gmail.com">keanudevlabs@gmail.com</a> oder nutze das Formular unten. Wir antworten meist innerhalb von zwei Werktagen.</p>
+</section>
+</div></article>
+  </main>
+  <footer><div class="wrap">
+    <a href="/privacy/">Privacy · Datenschutz</a><a href="/terms/">Terms · Nutzungsbedingungen</a><a href="/impressum/">Impressum · Legal Notice</a><a href="/support/">Support</a>
+  </div></footer>
+</body>
+</html>
